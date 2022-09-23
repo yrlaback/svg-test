@@ -19,12 +19,9 @@ body {
 
 .objects > * {
     flex: 1;
+    margin: 5px;
 }
 
-.objects:nth-child(1) {
-    background-color: burlywood;
-    align-self: flex-start;
-}
 .cat {
     animation: imgZoom 3.5s ease infinite;
     animation-play-state: paused;
@@ -43,6 +40,5 @@ img:hover {
 
 .header, .text {
     font-family: 'Roboto', sans-serif;
-    border-width: 5px;
 }
 
