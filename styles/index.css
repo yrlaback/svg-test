@@ -27,6 +27,7 @@ body {
 }
 .cat {
     animation: imgZoom 3.5s ease infinite;
+    animation-play-state: paused;
     animation-direction: reverse;
 }
 
@@ -34,6 +35,10 @@ body {
     0% {transform: scale(1) rotate(deg);}
     50% {transform: scale(1.1) rotate(180deg);}
     100% {transform: scale(1) rotate(0deg);}
+}
+
+img:hover {
+    animation-play-state: running;
 }
 
 .header, .text {
