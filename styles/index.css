@@ -1,6 +1,6 @@
 body {
     height: 200vh;
-    background-color:blueviolet;
+    background-color:#22c1c3;
     display: flex;
     justify-content: center;
 }
@@ -8,20 +8,36 @@ body {
 .container {
     max-width: 800px;
     width: 100%;
-    min-height: 450px;
-    background-color: cadetblue;
-    border: 10px solid firebrick;
+    height: 800px;
+    background-color: #6cbf90;
+    border: 10px solid #c2bd56;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+}
+
+.objects > * {
+    flex: 1;
 }
 
 .objects:nth-child(1) {
     background-color: burlywood;
-    align-self: baseline;
+    align-self: flex-start;
+}
+.cat {
+    animation: imgZoom 3.5s ease infinite;
+    animation-direction: reverse;
+}
+
+@keyframes imgZoom {
+    0% {transform: scale(1) rotate(deg);}
+    50% {transform: scale(1.1) rotate(180deg);}
+    100% {transform: scale(1) rotate(0deg);}
 }
 
 .header, .text {
     font-family: 'Roboto', sans-serif;
+    border-width: 5px;
 }
+
