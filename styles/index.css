@@ -1,0 +1,19 @@
+body {
+    height: 200vh;
+    background-color:blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    min-height: 900px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    display: flex;
+}
+
+.child {
+    flex-grow: 1;
+}
