@@ -22,6 +22,15 @@ body {
     margin: 5px;
 }
 
+.accept:hover {
+    fill: yellow;
+    stroke: yellow;
+}
+
+.deny:hover {
+    fill: black;
+}
+
 .cat {
     animation: imgZoom 3.5s ease infinite;
     animation-play-state: paused;
